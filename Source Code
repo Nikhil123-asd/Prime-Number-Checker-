@@ -1,0 +1,33 @@
+#include <stdio.h>
+ void primenumberchecker(int n);
+ int main()
+ {   int num;
+     printf("Enter The Number : ");
+     scanf("%d",&num);
+     primenumberchecker(num); 
+     return 0;
+ }
+    
+    void primenumberchecker(int n)
+     { int i=2;
+          if (n == 0 || n == 1)
+          {
+           printf("%d is Neither Prime Nor Composite.",n);
+           
+          } 
+          
+          else
+          {
+              if(i==n)
+              printf("%d is a Prime Number",n);
+             
+              else if(n%i==0)
+              printf("%d is Not a Prime Number",n);
+             
+              else
+              printf("%d is a Prime Number",n);
+              
+              
+          }
+     }
+     
